@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#header{
+  height: 140vh;
+  margin: 0;
+  background: linear-gradient(129deg, rgba(83, 175, 212, 1) 0%, rgba(189, 64, 189, 1) 100%);
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease-in-out infinite alternate;
+}
+#contact-bg{
+    background: linear-gradient(129deg, rgba(83, 175, 212, 1) 0%, rgba(189, 64, 189, 1) 100%);
+}
+/* Animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
